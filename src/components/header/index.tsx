@@ -1,15 +1,15 @@
-import './styles.css'
 import circleLogoImg from '../../assets/circleLogo.svg'
+import { Container, CircleLogo } from './styles.ts'
 
 export default function Header() {
 
   return (
     <>
-    <div className='container'>
-      <div className='circleLogo'>
+    <Container>
+      <CircleLogo>
         <img src={circleLogoImg} alt=''/>
         <span>meu portfolio</span>
-      </div>
+      </CircleLogo>
 
       <nav>
         <ul><a href=''></a>sobre mim</ul>
@@ -19,7 +19,7 @@ export default function Header() {
         <ul><a href=''></a>resumo</ul>
         <ul><a href=''></a>linha do tempo</ul>
       </nav>
-    </div>
+    </Container>
     </>
   )
 }

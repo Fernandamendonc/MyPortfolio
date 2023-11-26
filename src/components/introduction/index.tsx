@@ -1,11 +1,10 @@
-import './styles.css'
+import { Container } from './styles';
 
-export default function Introducao() {
+export default function Introduction() {
 
   return (
-    <>
-    <div className='container'>
-      <div className='circleFoto'>
+    <Container>
+      <div>
       </div>
 
       <span>Olá, eu sou a fernanda!</span>
@@ -18,7 +17,6 @@ export default function Introducao() {
         bvchsbvueyfgvcusvbdcjhsb dcvksbdvbsidbvisv
       </span>
 
-    </div>
-    </>
+    </Container>
   )
 }

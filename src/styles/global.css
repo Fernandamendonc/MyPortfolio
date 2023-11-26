@@ -5,8 +5,10 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  purple-10: #B983FF;
-  purple-20: #8F01C2;
+  --purple-10: #B983FF;
+  --purple-20: #8F01C2;
+  --gray-20: #353237;
+  --gray-10: #2B292D;
   background-color: #242424;
 
   font-synthesis: none;
@@ -42,7 +44,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: 'Poppins';
-  background-color: #1a1a1a;
+  background-color: var(--gray-10);
   cursor: pointer;
   transition: border-color 0.25s;
 }
