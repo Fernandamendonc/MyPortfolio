@@ -1,8 +1,8 @@
 import { Container, Wrapper } from './styles/App'
-import AboutMe from './components/aboutMe'
 import Header from './components/header'
 import Introduction from './components/introduction'
 import HardSkills from './components/hardskills'
+import Projetos from './components/projects'
 
 function App() {
 
@@ -12,9 +12,9 @@ function App() {
       <Wrapper>
         <Header />
         <Introduction/>
-        <AboutMe />
       </Wrapper>
       <HardSkills />
+      <Projetos />
     </Container>
     </>
   )
