@@ -4,14 +4,13 @@ import Introduction from './components/introduction'
 import Projects from './components/projects'
 
 function App() {
-
   return (
     <Container>
       <Wrapper>
         <Header />
-        <Introduction/>
+        <Introduction />
       </Wrapper>
-        <Projects/> 
+      <Projects />
     </Container>
   )
 }

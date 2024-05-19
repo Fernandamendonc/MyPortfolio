@@ -11,14 +11,12 @@ interface ProjectsProps {
   readonly project: ProjectType
 }
 
-export default function Carousel({project}:ProjectsProps) {
-
+export default function Carousel({ project }: ProjectsProps) {
   return (
     <Container>
       <Title>{project.title}</Title>
       <Description>{project.description}</Description>
       <img src={project.img} alt="" />
-
     </Container>
   )
 }

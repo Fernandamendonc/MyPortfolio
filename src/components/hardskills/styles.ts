@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: var(--gray-10);
 
   span {
-   text-align: center;
+    text-align: center;
   }
 `
 export const HardskillsLogos = styled.div`

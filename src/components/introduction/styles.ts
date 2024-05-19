@@ -46,7 +46,7 @@ export const ButtonProjetos = styled.div`
 
   font-size: 12px;
 
-  border: 1px solid #5F5F5F;
+  border: 1px solid #5f5f5f;
   border-radius: 30px;
 
   max-width: 130px;
