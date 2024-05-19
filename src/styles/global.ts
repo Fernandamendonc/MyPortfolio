@@ -1,3 +1,12 @@
+import { createGlobalStyle } from "styled-components";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+export const GlobalStyle = createGlobalStyle`
+
 :root {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -40,21 +49,20 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: 'Poppins';
-  background-color: var(--gray-10);
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+/*button:hover {
+  border-color: var(--purple-20);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+}*/
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -68,3 +76,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+`

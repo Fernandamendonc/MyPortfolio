@@ -17,12 +17,6 @@ export default function HardSkills() {
       <img src={logoReact} alt=''/>
       <img src={logoTypescript} alt=''/>
     </HardskillsLogos>
-      <span>
-        sbdksbdkfskd sdkbjvisgdivbwsidbv, wsiedbfwibesdvfbcwiedbvfwisbdvi, 
-        isedfisabedfvbciwasibdvibcdzbdcio
-        baibdcvkzbdxvckbzidvbizbdvibszidvbiasbedvibsiviugsaeibvchsbvueyf
-        gvcusvbdcjhsb dcvksbdvbsidbvisv
-      </span>
     </Container>
     </>
   )

@@ -4,8 +4,8 @@ export const Container = styled.div`
   border: 1px solid #8F01C2;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  width: 115px;
 
   border-radius: 50px;
 
