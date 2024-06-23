@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -76,4 +76,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+`
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Wrapper = styled.div`
+  padding: 0px 72px;
 `

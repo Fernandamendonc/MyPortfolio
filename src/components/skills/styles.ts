@@ -7,13 +7,11 @@ export const Container = styled.div`
 
   padding: 50px 0px;
 
-  background-color: var(--gray-10);
-
   span {
     text-align: center;
   }
 `
-export const HardskillsLogos = styled.div`
+export const Content = styled.div`
   display: flex;
   justify-content: space-between;
 

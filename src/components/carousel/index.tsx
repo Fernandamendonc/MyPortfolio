@@ -6,7 +6,7 @@ import {
   ContentImg,
 } from './styles.ts'
 
-export interface ProjectType {
+export interface PersonalProjectsType {
   readonly id: number
   readonly title: string
   readonly description: string
@@ -14,20 +14,22 @@ export interface ProjectType {
   readonly colorBorder: string
 }
 
-interface ProjectsProps {
-  readonly project: ProjectType
+interface PersonalProjectsProps {
+  readonly personalProject: PersonalProjectsType
 }
 
-export default function Carousel({ project }: ProjectsProps) {
+export default function Carousel({ personalProject }: PersonalProjectsProps) {
   return (
-    <Container colorBorder={project.colorBorder}>
+    <Container colorBorder={personalProject.colorBorder}>
       <ContentHeader>
-        <Title colorBorder={project.colorBorder}>{project.title}</Title>
-        <Description>{project.description}</Description>
+        <Title colorBorder={personalProject.colorBorder}>
+          {personalProject.title}
+        </Title>
+        <Description>{personalProject.description}</Description>
       </ContentHeader>
 
       <ContentImg>
-        <img src={project.img} alt="" />
+        <img src={personalProject.img} alt="" />
       </ContentImg>
     </Container>
   )

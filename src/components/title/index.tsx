@@ -1,15 +1,15 @@
-import { Container } from './styles'
+import { Container, Content } from './styles'
 
 interface TitleProps {
-  icon: string
   title: string
 }
 
-export default function Title({ icon, title }: TitleProps) {
+export default function Title({ title }: TitleProps) {
   return (
     <Container>
-      <img src={icon} alt="" width={'14px'} />
-      <span>{title}</span>
+      <Content>
+        <span>{title}</span>
+      </Content>
     </Container>
   )
 }

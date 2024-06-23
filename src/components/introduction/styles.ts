@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 30px;
+  padding: 40px 0px;
 
   span {
     text-align: end;

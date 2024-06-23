@@ -1,5 +1,5 @@
-import logoFImg from '../../assets/logo-f.svg'
-import icArrowContactImg from '../../assets/ic_seta_contato.svg'
+import logoFImg from '../../assets/ic_logo.svg'
+import icArrowContactImg from '../../assets/ic_seta.svg'
 import icLinkedinImg from '../../assets/ic_linkedin.svg'
 import icGithubImg from '../../assets/ic_github.svg'
 import icCvImg from '../../assets/ic_cv.svg'
@@ -19,7 +19,7 @@ export default function Header() {
       <CircleLogo>
         <Logo>
           <img src={logoFImg} alt="Logo" width={'16px'} />
-          <span>fernanda.</span>
+          <strong>fernanda.</strong>
         </Logo>
 
         <ButtonContact>
@@ -32,19 +32,19 @@ export default function Header() {
         <ul>
           <li>
             <ButtonContactPortfolio>
-              <img src={icLinkedinImg} alt="Seta contato" width={'16px'} />
+              <img src={icLinkedinImg} alt="Icon LinkedIn" width={'16px'} />
               <a href="">LinkedIn</a>
             </ButtonContactPortfolio>
           </li>
           <li>
             <ButtonContactPortfolio>
-              <img src={icGithubImg} alt="Seta contato" width={'16px'} />
+              <img src={icGithubImg} alt="Icon GitHub" width={'16px'} />
               <a href="https://github.com/Fernandamendonc">GitHub</a>
             </ButtonContactPortfolio>
           </li>
           <li>
             <ButtonContactPortfolio>
-              <img src={icCvImg} alt="Seta contato" width={'16px'} />
+              <img src={icCvImg} alt="Icon CV" width={'16px'} />
               <a href="">CV</a>
             </ButtonContactPortfolio>
           </li>

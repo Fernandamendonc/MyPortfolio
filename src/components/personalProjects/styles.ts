@@ -7,7 +7,6 @@ export const Container = styled.div`
   p {
     margin-top: 70px;
 
-    width: 600px;
     text-align: center;
   }
 `
@@ -19,4 +18,5 @@ export const Header = styled.div`
   align-items: center;
 
   margin-bottom: 50px;
+  padding: 0px 100px;
 `

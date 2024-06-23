@@ -5,6 +5,7 @@ import {
   TextoNome,
   TextoSobrenome,
 } from './styles'
+
 import icChaveAbertaImg from '../../assets/ic_chave_aberta.svg'
 import icChaveFechadaImg from '../../assets/ic_chave_fechada.svg'
 

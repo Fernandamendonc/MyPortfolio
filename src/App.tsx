@@ -1,8 +1,10 @@
-import { Container, Wrapper } from './styles/App'
 import Header from './components/header'
 import Introduction from './components/introduction'
-import Projects from './components/projects'
-import HardSkills from './components/hardskills'
+import PersonalProjects from './components/personalProjects'
+import Skills from './components/skills'
+import WorkExperienceTimeline from './components/workExperienceTimeline'
+import Contact from './components/contact'
+import { Container, Wrapper } from './styles/global'
 
 function App() {
   return (
@@ -11,9 +13,14 @@ function App() {
         <Header />
         <Introduction />
       </Wrapper>
-      <Projects />
 
-      <HardSkills />
+      <PersonalProjects />
+
+      <Wrapper>
+        <WorkExperienceTimeline />
+        <Skills />
+        <Contact />
+      </Wrapper>
     </Container>
   )
 }

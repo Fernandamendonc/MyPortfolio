@@ -5,6 +5,8 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  margin-top: 44px;
 `
 export const CircleLogo = styled.div`
   display: flex;
@@ -15,36 +17,33 @@ export const CircleLogo = styled.div`
 
   padding: 10px;
 
-  border-radius: 20px;
-
-  span {
-    font-weight: bolder;
-  }
+  border-radius: 30px;
 `
 
 export const Logo = styled.div`
   display: flex;
   gap: 10px;
+
+  padding-left: 10px;
 `
-export const ButtonContact = styled.div`
+export const ButtonContact = styled.button`
   background-color: #3b3b3b;
 
-  border-radius: 20px;
+  border-radius: 30px;
   border: 1px #5f5f5f solid;
-
-  width: 130px;
-  height: 32px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 
   cursor: pointer;
 
-  padding: 0px 10px;
+  padding: 8px 15px;
 
   p {
     font-size: 12px;
+    margin: 0px;
   }
 `
 
@@ -59,6 +58,10 @@ export const Nav = styled.div`
   a {
     color: white;
     font-size: 12px;
+  }
+
+  a:hover {
+    color: white;
   }
 `
 
