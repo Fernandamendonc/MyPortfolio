@@ -1,4 +1,4 @@
-import { PersonalProjectsType } from '../components/carousel'
+import { PersonalProjectsType } from '../components/projectCarousel'
 
 export const personalProjects: PersonalProjectsType[] = [
   {

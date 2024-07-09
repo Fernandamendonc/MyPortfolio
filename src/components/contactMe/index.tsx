@@ -11,16 +11,16 @@ import {
   ContactInformationHeader,
   ContactInformationTitle,
   ContactInformationSubtitle,
-  ContactInformationButton,
   ContactInformationImg,
 } from './styles'
 import { useState } from 'react'
 import ModalContact from '../modalContact'
+import ButtonContact from '../buttonContact'
 
-export default function Contact() {
+export default function ContactMe() {
   const [isOpenModalContact, setIsOpenModalContact] = useState(false)
 
-  function OpenModalContact() {
+  function ToggleModalContact() {
     setIsOpenModalContact(!isOpenModalContact)
   }
 
@@ -58,16 +58,13 @@ export default function Contact() {
           <ContactInformationSubtitle>
             Caso tenha interesse em algum projeto, me manda mensagem
           </ContactInformationSubtitle>
+          <ButtonContact openModal={ToggleModalContact} />
         </ContactInformationHeader>
 
         <ModalContact
-          OpenModalContact={OpenModalContact}
+          ToggleModalContact={ToggleModalContact}
           isOpenModalContact={isOpenModalContact}
         />
-
-        <ContactInformationButton onClick={OpenModalContact}>
-          Claro! vamos conversar
-        </ContactInformationButton>
 
         <ContactInformationImg src={BackgroundContact} />
       </ContactInformation>

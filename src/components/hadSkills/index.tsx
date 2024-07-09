@@ -1,11 +1,12 @@
 import logoFigma from '../../assets/ic_figma.svg'
-import logoNode from '../../assets/ic_nodeJs.svg'
+import logoNode from '../../assets/ic_node.svg'
 import logoPython from '../../assets/ic_python.svg'
 import logoReact from '../../assets/ic_react.svg'
-import logoTypescript from '../../assets/ic_typescript.svg'
+import logoTypeScript from '../../assets/ic_typescript.svg'
+import logoJavaScript from '../../assets/ic_javascript.svg'
 import { Container, Content } from './styles.ts'
 
-export default function Skills() {
+export default function HadSkills() {
   return (
     <Container>
       <Content>
@@ -13,7 +14,8 @@ export default function Skills() {
         <img src={logoNode} alt="" />
         <img src={logoPython} alt="" />
         <img src={logoReact} alt="" />
-        <img src={logoTypescript} alt="" />
+        <img src={logoTypeScript} alt="" />
+        <img src={logoJavaScript} alt="" />
       </Content>
     </Container>
   )

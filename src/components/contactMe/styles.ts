@@ -38,6 +38,8 @@ export const ContactInformationHeader = styled.div`
   justify-content: center;
   align-items: center;
 
+  gap: 1rem;
+
   margin-top: 100px;
   margin-bottom: 40px;
 `
@@ -46,19 +48,10 @@ export const ContactInformationTitle = styled.span`
   font-weight: bold;
 `
 export const ContactInformationSubtitle = styled.span``
-export const ContactInformationButton = styled.button`
-  background-color: white;
-  color: black;
 
-  margin-bottom: 100px;
-
-  padding: 10px 15px;
-
-  font-weight: bold;
-`
 export const ContactInformationImg = styled.img`
   width: 100%;
 
   position: absolute;
-  z-index: -100;
+  z-index: -1;
 `

@@ -1,19 +1,17 @@
 import logoFImg from '../../assets/ic_logo.svg'
-import icArrowContactImg from '../../assets/ic_seta.svg'
-import icLinkedinImg from '../../assets/ic_linkedin.svg'
-import icGithubImg from '../../assets/ic_github.svg'
-import icCvImg from '../../assets/ic_cv.svg'
 
-import {
-  Container,
-  CircleLogo,
-  Logo,
-  ButtonContact,
-  Nav,
-  ButtonContactPortfolio,
-} from './styles.ts'
+import { Container, CircleLogo, Logo } from './styles.ts'
+import NavSocialMidia from '../navSocialMidia/index.tsx'
+import ModalContact from '../modalContact/index.tsx'
+import { useState } from 'react'
+import ButtonContact from '../buttonContact/index.tsx'
 
 export default function Header() {
+  const [isOpenModalContact, setIsOpenModalContact] = useState(false)
+
+  function ToggleModalContact() {
+    setIsOpenModalContact(!isOpenModalContact)
+  }
   return (
     <Container>
       <CircleLogo>
@@ -21,35 +19,14 @@ export default function Header() {
           <img src={logoFImg} alt="Logo" width={'16px'} />
           <strong>fernanda.</strong>
         </Logo>
-
-        <ButtonContact>
-          <p> Vamos conversar</p>
-          <img src={icArrowContactImg} alt="Seta contato" width={'16px'} />
-        </ButtonContact>
+        <ButtonContact openModal={ToggleModalContact} />
       </CircleLogo>
 
-      <Nav>
-        <ul>
-          <li>
-            <ButtonContactPortfolio>
-              <img src={icLinkedinImg} alt="Icon LinkedIn" width={'16px'} />
-              <a href="">LinkedIn</a>
-            </ButtonContactPortfolio>
-          </li>
-          <li>
-            <ButtonContactPortfolio>
-              <img src={icGithubImg} alt="Icon GitHub" width={'16px'} />
-              <a href="https://github.com/Fernandamendonc">GitHub</a>
-            </ButtonContactPortfolio>
-          </li>
-          <li>
-            <ButtonContactPortfolio>
-              <img src={icCvImg} alt="Icon CV" width={'16px'} />
-              <a href="">CV</a>
-            </ButtonContactPortfolio>
-          </li>
-        </ul>
-      </Nav>
+      <NavSocialMidia />
+      <ModalContact
+        ToggleModalContact={ToggleModalContact}
+        isOpenModalContact={isOpenModalContact}
+      />
     </Container>
   )
 }

@@ -4,22 +4,14 @@ export interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  cursor: pointer;
+  border: 1px solid var(--gray-20);
+  border-radius: 20px;
 
-  border: 3px solid ${(props) => props.colorBorder};
-  border-radius: 30px;
+  padding: 15px;
 
-  padding: 44px 34px;
-
-  gap: 30px;
-
-  cursor: pointer;
+  max-width: 340px;
 
   height: 490px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: end;
 `
 
 export const ContentHeader = styled.div`
@@ -31,21 +23,16 @@ export const ContentHeader = styled.div`
 `
 export const ContentImg = styled.div`
   img {
-    width: 100%;
+    width: 340px;
   }
 `
 export const Title = styled.div<ContainerProps>`
-  display: flex;
-  justify-content: center;
-
-  padding: 5px 10px;
-
   color: ${(props) => props.colorBorder};
   font-weight: 700;
-
-  border: 3px solid ${(props) => props.colorBorder};
-  border-radius: 30px;
+  font-size: 22px;
 `
 export const Description = styled.div`
   height: 130px;
+  color: white;
+  font-weight: lighter;
 `

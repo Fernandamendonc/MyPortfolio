@@ -6,6 +6,7 @@ export const Container = styled.div`
 
   p {
     margin-top: 70px;
+    max-width: 618px;
 
     text-align: center;
   }

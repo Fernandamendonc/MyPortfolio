@@ -22,8 +22,8 @@ export const Title = styled.div`
     font-weight: bolder;
   }
 
-  a:houver {
-    color: p ${(props) => props.color};
+  a:hover {
+    filter: brightness(2);
   }
 `
 export const TimeWorked = styled.div`

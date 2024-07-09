@@ -7,6 +7,34 @@ import 'swiper/css/scrollbar'
 
 export const GlobalStyle = createGlobalStyle`
 
+.react-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .react-modal-content {
+    width: 100%;
+    max-width: 437px;
+
+    background-color: black;
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.24rem;
+
+    border-radius: 14px;
+  }
+
 :root {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -31,9 +59,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -44,6 +70,19 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+textarea, input {
+  font-family: 'Poppins';
+  border: 1px solid #525252;
+  background-color: var(--gray-10);
+
+  border-radius: 8px;
+}
+
+textarea:focus,input:focus,
+input:focus-visible, textarea:focus-visible {
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 button {
