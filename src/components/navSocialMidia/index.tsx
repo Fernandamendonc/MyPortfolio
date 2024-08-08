@@ -10,19 +10,32 @@ export default function NavSocialMidia() {
         <li>
           <ButtonContactPortfolio>
             <img src={icLinkedinImg} alt="Icon LinkedIn" width={'16px'} />
-            <a href="">LinkedIn</a>
+            <a href="" target="_blank">
+              LinkedIn
+            </a>
           </ButtonContactPortfolio>
         </li>
         <li>
           <ButtonContactPortfolio>
             <img src={icGithubImg} alt="Icon GitHub" width={'16px'} />
-            <a href="https://github.com/Fernandamendonc">GitHub</a>
+            <a
+              href="https://github.com/Fernandamendonc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </ButtonContactPortfolio>
         </li>
         <li>
           <ButtonContactPortfolio>
             <img src={icCvImg} alt="Icon CV" width={'16px'} />
-            <a href="">CV</a>
+            <a
+              href="src/assets/files/Fernanda Mendonça - CV Novo.pdf"
+              target="_blank"
+            >
+              CV
+            </a>
           </ButtonContactPortfolio>
         </li>
       </ul>

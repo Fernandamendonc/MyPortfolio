@@ -125,3 +125,8 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   padding: 0px 72px;
 `
+export const ContainerHardSkills = styled.div`
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+`

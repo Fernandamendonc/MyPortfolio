@@ -2,10 +2,10 @@ import Header from './components/header'
 import Introduction from './components/introduction'
 import PersonalProjects from './components/personalProjects'
 import WorkExperienceTimeline from './components/workExperienceTimeline'
-import { Container, Wrapper } from './styles/global'
+import { Container, Wrapper, ContainerHardSkills } from './styles/global'
 import ContactMe from './components/contactMe'
 import { technologies } from './db/technologies'
-import ButtonApps from './components/buttonApps'
+import HardSkills from './components/hardSkills'
 
 function App() {
   return (
@@ -20,16 +20,16 @@ function App() {
       <Wrapper>
         <WorkExperienceTimeline />
 
-        <div style={{ display: 'flex' }}>
+        <ContainerHardSkills>
           {technologies.map((technology) => {
             return (
-              <ButtonApps
+              <HardSkills
                 key={technology.id}
                 technology={technology}
-              ></ButtonApps>
+              ></HardSkills>
             )
           })}
-        </div>
+        </ContainerHardSkills>
 
         <ContactMe />
       </Wrapper>
